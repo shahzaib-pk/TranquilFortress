@@ -34,7 +34,7 @@ module.exports = function () {
     }));
 
     winston.add(new winston.transports.MongoDB({
-        db: 'mongodb://localhost/TranquilFortress',
+        db: config.get('db'),
         options: {
             useUnifiedTopology: true,
         }
